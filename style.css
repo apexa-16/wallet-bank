@@ -1,0 +1,990 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #DBEFF0;
+
+}
+
+.nav {
+    color: white;
+}
+
+header .nav .logo {
+    position: absolute;
+    left: 2%;
+}
+
+header .nav .logo i {
+    position: absolute;
+    font-size: 30px;
+    color: #FE5C2D;
+}
+
+header .nav .logo .ul {
+    position: relative;
+    margin-left: 45px;
+}
+
+header .nav .logo .ul h6 {
+
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 0;
+    background-color: #FE5C2D;
+}
+
+
+.nav-dis {
+    top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-dis #parts {
+    display: none;
+    position: relative;
+    width: 80%;
+    left: 50%;
+}
+
+.nav-dis a {
+    float: left;
+    color: white;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-dis a.icon {
+    float: right;
+    color: white;
+}
+
+.nav-dis a:hover {
+    transform: scale(1.18);
+}
+
+section .home {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+.home .box {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 0;
+    height: 500px;
+    border-radius: 10px 0 0 10px;
+    background-color: #FE5C2D;
+    z-index: -1;
+    animation: boxcome 1s;
+}
+
+@keyframes boxcome {
+    from {
+        right: -1000px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.home .box-dis {
+    position: absolute;
+    width: 40%;
+    right: 3%;
+    top: 100px;
+    animation: bdiscome 2s;
+}
+
+@keyframes bdiscome {
+    from {
+        right: -2000px;
+    }
+
+    to {
+        right: 3%;
+    }
+}
+
+.home .box-dis h3 {
+    font-size: 70px;
+    color: rgb(237, 233, 233);
+    margin-bottom: -17px;
+    margin-top: 0px;
+    text-shadow: 3px 3px 0 #c22f07;
+}
+
+.home .box-dis ul {
+    margin-top: 30px;
+    color: rgb(237, 233, 233);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.home .box-dis button {
+    background-color: black;
+    font-size: 19px;
+    color: white;
+    padding: 1.1% 5%;
+    margin-top: 20px;
+}
+
+.home .box-dis button:hover {
+    box-shadow: 2px 2px 3px #c22f07;
+}
+
+
+
+.home .phone {
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px #FE5C2D;
+    height: 398px;
+    width: 245px;
+    left: 30%;
+    top: 70px;
+    animation: phonecome 1s;
+}
+
+.home .phone img {
+    height: 400px;
+    width: 250px;
+}
+
+@keyframes phonecome {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+.home .phn-dis {
+    top: 150px;
+    left: 70px;
+    position: absolute;
+    animation: phndis 1.5s;
+}
+
+@keyframes phndis {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 70px;
+    }
+}
+
+.home .phn-dis h6 {
+    font-size: 50px;
+    color: #B7DFE1;
+}
+
+.home .phn-dis i {
+    font-size: 60px;
+    color: #B7DFE1;
+}
+
+
+/*about*/
+#aboutapp .about {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+}
+
+.about .one {
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.about .one h1 {
+    font-size: 50px;
+}
+
+.about .one h1 span {
+    color: #FE5C2D;
+}
+
+.about .one .box {
+    width: 96%;
+    left: 2%;
+    border-radius: 9px;
+    padding: 40px 10px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background-color: #B7DFE1;
+    display: flex;
+    gap: 15%;
+}
+
+.about .one .box .cat i {
+    font-size: 50px;
+    color: #FE5C2D;
+}
+
+.about .one .box .cat h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.about .one .box .cat h5 {
+    font-size: 15px;
+
+}
+
+#aboutapp .about .two {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.about .two .cir {
+    position: absolute;
+    background-color: #FE5C2D;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    right: 10%;
+}
+
+.about .two .phone {
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    right: 15%;
+    transform: rotate(-30deg);
+    animation: comephnt 1s;
+    height: 498px;
+    width: 245px;
+    top: -75px;
+}
+
+.about .two .phone img {
+    height: 500px;
+    width: 250px;
+}
+
+@keyframes comephnt {
+    from {
+        right: 0px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        right: 15%;
+        transform: rotate(-30deg);
+    }
+}
+
+
+.about .two .dis {
+    width: 50%;
+    left: 5%;
+    position: absolute;
+    top: 50px;
+}
+
+.about .two .dist {
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    top: 500px;
+}
+
+.about .two h1 {
+    font-size: 40px;
+}
+
+.about .two h1 span {
+
+    color: #FE5C2D;
+}
+
+.about .two p {
+    margin-top: 5px;
+    width: 70%;
+    font-size: 12px;
+}
+
+.about .two button {
+    margin-top: 15px;
+    background: transparent;
+    padding: 2px 4%;
+    border: none;
+    border-bottom: 2px solid #FE5C2D;
+    font-size: 20px;
+}
+
+.about .two button:hover {
+    background: #FE5C2D;
+    border-radius: 20px;
+
+}
+
+.about .two .video {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 5%;
+    top: 480px;
+}
+
+.about .two video {
+    height: 300px;
+    width: 400px;
+
+}
+
+
+/*aboutus*/
+section .aboutus {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    top: 0px;
+    background: #B7DFE1;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.aboutus h1 {
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
+.aboutus h1 span {
+    color: #FE5C2D;
+}
+
+.aboutus p {
+    margin-top: 20px;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.aboutus .container {
+    display: flex;
+    gap: 15%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.aboutus .container img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.aboutus button {
+    margin-top: 40px;
+    background-color: #FE5C2D;
+    border: none;
+    padding: 1% 5%;
+    border-radius: 20px
+}
+
+
+/* contaect*/
+
+#contact .contact{
+    width: 100%;
+    height: 500px;
+}
+section .contact .discrip{
+    width: 80%;
+    position: absolute;
+    margin-top: 40px;
+    left: 5%;
+}
+
+section .contact .discrip h1{
+    font-size: 50px;
+}
+
+section .contact .discrip h1 span{
+   color: #FE5C2D;
+}
+section .contact .discrip p{
+    font-size: 15px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+section .contact .discrip h4{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+section .contact .discrip i{
+    font-size: 90px;
+}
+
+section .contact .discrip .ins{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+section .contact .discrip .ins .app{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+section .contact .discrip .phone {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px #FE5C2D;
+    height: 398px;
+    width: 245px;
+    right: 10%;
+   position: absolute;
+    animation: phne 1s;
+top: 50px;
+}
+
+section .contact .discrip .phone img {
+    height: 400px;
+    width: 250px;
+}
+
+/* footer*/
+footer{
+    width: 100%;
+    height: 210px;
+}
+
+footer .footer{
+    position: absolute;
+    width: 96%;
+    background-color: #B7DFE1;
+    left: 2%;
+    margin-top: 20px;
+   
+    padding: 20px;
+}
+footer .footer .logo {
+    position: relative;
+    left: 2%;
+    width: 115px;
+}
+
+footer .footer .logo i {
+    position: absolute;
+    font-size: 30px;
+    color: #FE5C2D;
+}
+
+footer .footer .logo .ul {
+    position: relative;
+    margin-left: 45px;
+}
+
+footer .footer .logo .ul h6 {
+
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 0;
+    background-color: #FE5C2D;
+}
+
+
+footer .footer h1{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: -15px;
+    color: white;
+    background: black;
+    width: 10%;
+}
+footer .footer .list{
+    position: absolute;
+    width: 45%;
+    right: 0px;
+    top: 20px;
+}
+footer .footer ul{
+    list-style: none;
+    display: flex;
+    gap: 7%;
+}
+
+footer .footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer .footer .icon{
+    display: flex;
+    gap: 5%;
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+}
+footer .footer .icon i{
+    font-size: 30px;
+}
+
+
+/*mid*/
+@media only screen and (max-width:740px) {
+    .nav-dis a {
+        font-size: 6px;
+        padding: 0px 2%;
+    }
+
+    header .nav .logo i {
+        font-size: 15px;
+        left: 0px;
+    }
+
+    header .nav .logo .ul {
+        margin-left: 20px;
+    }
+
+    header .nav .logo .ul h6 {
+        font-size: 5px;
+        margin-bottom: 2.5px;
+    }
+
+    section .home {
+        height: 250px;
+    }
+
+    .home .box {
+        height: 250px;
+
+    }
+
+
+    .home .phone {
+
+        border-radius: 10px;
+
+        box-shadow: 5px 5px 0px #FE5C2D;
+        height: 199px;
+        width: 100px;
+        left: 21%;
+        top: 35px;
+        animation: phonecome 1s;
+    }
+
+    @keyframes phonecome {
+        from {
+            left: -1000px;
+        }
+
+        to {
+            left: 21%;
+        }
+    }
+
+    .home .phone img {
+        height: 200px;
+        width: 101px;
+    }
+
+    .home .box-dis {
+        width: 40%;
+        right: 2%;
+        top: 50px;
+    }
+
+    @keyframes bdiscome {
+        from {
+            right: -2000px;
+        }
+
+        to {
+            right: 2%;
+        }
+    }
+
+    .home .box-dis h3 {
+        font-size: 25px;
+        margin-bottom: -10px;
+
+    }
+
+    .home .box-dis ul {
+        margin-top: 15px;
+        color: rgb(237, 233, 233);
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .home .box-dis button {
+        background-color: black;
+        font-size: 7px;
+        color: white;
+        padding: 1.1% 5%;
+        margin-top: 20px;
+    }
+
+    .home .phn-dis {
+        top: 75px;
+        left: 25px;
+
+    }
+
+    @keyframes phndis {
+        from {
+            left: -1000px;
+        }
+
+        to {
+            left: 25px;
+        }
+    }
+
+    .home .phn-dis h6 {
+        font-size: 10px;
+        color: #B7DFE1;
+    }
+
+    .home .phn-dis i {
+        font-size: 15px;
+        color: #B7DFE1;
+    }
+
+    #aboutapp .about {
+        height: 640px;
+    }
+
+    .about .one {
+        margin-top: 20px;
+    }
+
+    .about .one h1 {
+        font-size: 25px;
+    }
+
+    .about .one .box {
+        padding: 20px 10px;
+        margin-top: 20px;
+        gap: 8%;
+    }
+
+    .about .one .box .cat i {
+        font-size: 25px;
+        color: #FE5C2D;
+    }
+
+    .about .one .box .cat h3 {
+        margin-top: 10px;
+        font-size: 9px;
+    }
+
+    .about .one .box .cat h5 {
+        font-size: 7px;
+
+    }
+
+    .about .two {
+
+        top: 0px;
+
+    }
+
+    .about .two .cir {
+        height: 150px;
+        width: 150px;
+        right: 10%;
+    }
+
+    .about .two .phone {
+        position: absolute;
+        border-radius: 5px;
+        overflow: hidden;
+        right: 15%;
+        transform: rotate(-30deg);
+        animation: comephnt 1s;
+        height: 198px;
+        width: 97px;
+        top: -35px;
+    }
+
+    .about .two .phone img {
+        height: 200px;
+        width: 100px;
+    }
+
+    @keyframes comephnt {
+        from {
+            right: 0px;
+            transform: rotate(0deg);
+        }
+
+        to {
+            right: 15%;
+            transform: rotate(-30deg);
+        }
+    }
+
+
+    .about .two .dis {
+        top: 30px;
+    }
+
+    .about .two .dist {
+        position: absolute;
+        width: 50%;
+        right: 2%;
+        top: 250px;
+    }
+
+    .about .two h1 {
+        font-size: 14px;
+    }
+
+
+    .about .two p {
+        margin-top: 5px;
+        width: 70%;
+        font-size: 5px;
+    }
+
+    .about .two button {
+        margin-top: 15px;
+        background: transparent;
+        padding: 2px 4%;
+        border: none;
+        border-bottom: 2px solid #c22f07;
+        font-size: 8px;
+    }
+
+    .about .two .video {
+        height: 120px;
+        width: 150px;
+        position: absolute;
+        left: 5%;
+        top: 240px;
+    }
+
+    .about .two video {
+        height: 120px;
+        width: 150px;
+
+    }
+
+
+    section .aboutus {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+
+        background: #B7DFE1;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 10px;
+    }
+
+    .aboutus h1 {
+        font-size: 25px;
+        margin-bottom: -5px;
+    }
+
+    .aboutus h1 span {
+        color: #FE5C2D;
+    }
+
+    .aboutus p {
+        margin-top: 20px;
+        font-size: 6px;
+        margin-bottom: 40px;
+    }
+
+    .aboutus .container {
+        display: flex;
+        gap: 7%;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .aboutus .container img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .aboutus button {
+        margin-top: 40px;
+        background-color: #FE5C2D;
+        border: none;
+        padding: 1% 5%;
+        border-radius: 20px
+    }
+
+#contact .contact{
+    width: 100%;
+    height: 280px;
+}
+section .contact .discrip{
+ 
+    
+    margin-top: 40px;
+    left: 5%;
+}
+
+section .contact .discrip h1{
+    font-size: 15px;
+}
+
+section .contact .discrip h1 span{
+   color: #FE5C2D;
+}
+section .contact .discrip p{
+    font-size: 7px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+section .contact .discrip h4{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+section .contact .discrip i{
+    font-size: 40px;
+}
+
+section .contact .discrip .ins{
+    font-size: 7px;
+    display: flex;
+    gap: 2%;
+    margin-top: 20px;
+}
+section .contact .discrip .ins .app{
+    background-color: black;
+    color: white;
+    padding: 1% 5%;
+    border-radius: 10px;
+}
+
+
+section .contact .discrip .phone {
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px #FE5C2D;
+    height: 198px;
+    width: 98px;
+    right: -15%;
+   position: absolute;
+    animation: phne 1s;
+top: 25px;
+}
+
+section .contact .discrip .phone img {
+    height: 200px;
+    width: 100px;
+}
+
+footer{
+   
+    height: 200px;
+}
+
+footer .footer{
+    position: absolute;
+    width: 96%;
+    background-color: #B7DFE1;
+    left: 2%;
+    margin-top: 20px;
+   
+    padding: 20px;
+}
+footer .footer .logo {
+    position: relative;
+    left: 2%;
+    width: 85px;
+}
+
+footer .footer .logo i {
+    position: absolute;
+    font-size: 10px;
+    color: #FE5C2D;
+}
+
+footer .footer .logo .ul {
+    position: relative;
+    margin-left: 15px;
+}
+
+footer .footer .logo .ul h6 {
+
+    list-style: none;
+    font-size: 8px;
+    margin-bottom: 5px;
+    padding: 0;
+    background-color: #FE5C2D;
+}
+
+
+footer .footer h1{
+    margin-top: 5px;
+    font-size: 8px;
+    margin-bottom: 0px;
+    color: white;
+    background: black;
+    width: 20%;
+}
+footer .footer .list{
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    top: 20px;
+}
+footer .footer ul{
+    list-style: none;
+    display: flex;
+    gap: 7%;
+}
+
+footer .footer ul li a{
+    font-size: 5px;
+}
+
+footer .footer .icon{
+    display: flex;
+    gap: 5%;
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+}
+footer .footer .icon i{
+    font-size: 10px;
+}
+
+
+}
